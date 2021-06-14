@@ -11,8 +11,6 @@
  *
  * understanding the math:
  * https://www.whydomath.org/Reading_Room_Material/ian_stewart/chocolate/chocolate.html
- * https://en.wikipedia.org/wiki/Chomp
- * https://de.wikipedia.org/wiki/Chomp
  *
  * sim to test out scenarios:
  * https://www.geogebra.org/m/udJMn4Am
@@ -124,11 +122,12 @@ public class Ritterspiel {
                     if (i == 0 && j == 0) {
                         System.out.print("X   ");
                     } else {
-                        System.out.print("0   ");
+                        System.out.print("█   ");
                     }
                 }
                 System.out.print("\n");
                 if(i < y-1) {
+                    System.out.println(i);
                     YBreak.add(i);
                 }
             }
@@ -186,7 +185,7 @@ public class Ritterspiel {
 
     }
 
-    //prints a fancy title
+    //prints a fancy title with game instructions
     public static void printTitle() {
         // made with http://www.kammerl.de/ascii/AsciiSignature.php
         System.out.println("-----------------------------------------------------------");
@@ -201,7 +200,7 @@ public class Ritterspiel {
         System.out.println("by Lennart Palisaar");
         System.out.println("-----------------------------------------------------------");
         System.out.println("           Win by being the one who reduces the");
-        System.out.println("            board to just the top lef corner.");
+        System.out.println("            board to just the top left corner.");
         System.out.println("         Select where you want to break off the the");
         System.out.println("        chocolate by inputting that number or letter.");
         System.out.println("                        gl,hf!");
